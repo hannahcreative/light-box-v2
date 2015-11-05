@@ -10,8 +10,14 @@ h1 {
 }
 
 ul {
-  text-align: center;
+  // text-align: center;
   padding: 0;
+}
+
+.itemWrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .box {
@@ -21,6 +27,23 @@ ul {
   text-align: center;
   color:#fff;
   background-size: cover;
+  margin: auto;
+  cursor: pointer;
+
+  p {
+    font-size: 25px;
+    background: #fff;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 165px;
+    padding: 5px 0px;
+    font-weight: 100;
+    color: #000;
+    }
+
+  span {
+    font-weight: bold;
+  }  
 }
 
 .box:first-child {
@@ -73,30 +96,18 @@ ul {
         .projectTitle {
           font-size: 24px;
           margin: 0 0 10px 0;
+          font-weight:bold;
         }
     }
 }
 
-// a.close {
-//   right: 0;
-//   color: black;
-//   display: inline-block;
-//   width: 20px;
-//   height: 20px;
-//   font-weight: 700;
-//   text-align: center;
-//   text-decoration: none;
-//   position: absolute;
-// }
-
 a.close {
-  background-image: url("../img/exit.png");
-  background-size: cover;
-  width: 29px;
-  height: 35px;
+  right: 10px;
+  color: black;
   display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
   position: absolute;
-  right: -9px;
+  font-size: 25px;
 }
-
-// For some reason this is not displaying properly

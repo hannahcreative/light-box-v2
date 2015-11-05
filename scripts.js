@@ -68,14 +68,30 @@ $(function() {
     }
 
   });
+
+  // THIS IS THE SORTING PART - IT IS NOT WORKING... YET  
+
+  function sort(attribute) {
+    // first hide everything
+    $('.box').hide();
+    // then show the ones that you want
+    $('[data-category="'+attribute+'"]').show()
+  };
+
+  // when the list item is clicked...
+  $('.li').click(function(event){
+    
+    // find out which data-category is attached to the list item
+    var whatCat = this.data();
+    console.log(whatCat);
+    // call the function?
+    // sort();
+
+
+  });
 });
 
-function sort(attribute) {
-  // first hide everything
-  $('.box').hide();
-  // then show the ones that you want
-  $('[data-category="'+attribute+'"]').show()
-};
+
 
 // when the user selects a category, do the previous function
 // $('[data-category="cat-1"]').onclick = function() {
