@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Lightbox</title>
+</head>
+<body>
+  <h1>Lightbox</h1>
+ <!--  <ul>
+    <li>Category 1</li>
+    <li>Category 2</li>
+    <li>Category 3</li>
+  </ul> -->
+  <ul>
+    <li class="box" data-category="cat-1" id="project1">Project 1</li>
+    <li class="box" data-category="cat-2" id="project2">Project 2</li>
+    <li class="box" data-category="cat-3" id="project3">Project 3</li>
+  </ul>
+  <div class="lightboxWrapper">
+    <div class="lightbox">
+      <img src="#" class="lightboxImg">
+      <div class="text">
+        <p class="projectTitle"></p>
+        <p class="projectDesc"></p>
+      </div> 
+      <a href="#" class="close">x</a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="scripts.js"></script> 
+</body>
+</html>
+
+
+<!-- Brainstorm -->
+<!-- Option 1
+Click on div and open lightbox with JS - can this lightbox use the same code as a modal?-->
+
+<!-- Option 2 
+Apply category classes to each div and enable sorting function -->
+
+<!-- Option 3
+Sidebar menu with dropdown subitems -->
+
+<!-- Option 4
+Use Flexbox but create pop up for user who is on IE 9 or lower asking them to update their browser -->
+
+
