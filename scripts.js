@@ -69,31 +69,18 @@ $(function() {
 
   });
 
-  // THIS IS THE SORTING PART - IT IS NOT WORKING... YET  
-
-  function sort(attribute) {
-    // first hide everything
-    $('.box').hide();
-    // then show the ones that you want
-    $('[data-category="'+attribute+'"]').show()
-  };
-
   // when the list item is clicked...
-  $('.li').click(function(event){
+  $('[data-filter]').click(function(event){
     
     // find out which data-category is attached to the list item
-    var whatCat = this.data();
+    var whatCat = $(this).data('filter');
     console.log(whatCat);
-    // call the function?
-    // sort();
+    
+    // first hide everything
+    $('[data-category]').hide();
 
+    // then show some that match the selector
+    $('[data-category="'+whatCat+'"]').fadeIn();
 
   });
 });
-
-
-
-// when the user selects a category, do the previous function
-// $('[data-category="cat-1"]').onclick = function() {
-//    alert("button was clicked");
-// }​;​
